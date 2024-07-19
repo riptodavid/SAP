@@ -103,8 +103,8 @@ body {
 
 .stamp {
     position: absolute;
-    top: 0; /* Move the stamp to the top edge of the header */
-    left: 0; /* Move the stamp to the left edge of the header */
+    bottom: -20px; /* Move the stamp to the bottom edge of the header */
+    right: 0; /* Move the stamp to the right edge of the header */
     padding: 10px 20px;
     border: 3px solid red;
     color: red;
