@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative; /* Make the content a positioning context */
+    padding-bottom: 50px; /* Add space for the stamp */
 }
 
 .pepe-img {
