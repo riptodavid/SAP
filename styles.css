@@ -1,19 +1,24 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #a67c52; /* Brown background to match a top secret file */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #a67c52; /* Brown background to match a top secret file */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
     padding: 20px;
     border: 2px solid #333;
     background-color: #d2b48c; /* Lighter brown for inner background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 50px;
 }
 
 .header {
@@ -74,4 +79,19 @@ input[type="text"] {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.stamp {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: 3px solid red;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: rotate(-20deg);
+    opacity: 0.8;
+    background-color: white;
 }
