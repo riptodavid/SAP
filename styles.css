@@ -31,13 +31,14 @@ body {
     margin-bottom: 20px;
     padding-bottom: 10px;
     position: relative; /* Make the header a positioning context */
-    min-height: 100px; /* Ensure the header has enough height */
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Make the content a positioning context */
+    padding-bottom: 50px; /* Add space for the stamp */
 }
 
 .pepe-img {
@@ -119,8 +120,8 @@ body {
 
 .stamp {
     position: absolute;
-    bottom: -20px; /* Move the stamp to the bottom edge of the header */
-    right: 10; /* Move the stamp to the right edge of the header */
+    bottom: -20px; /* Move the stamp to the bottom edge of the content */
+    right: 0; /* Move the stamp to the right edge of the content */
     padding: 10px 20px;
     border: 3px solid red;
     color: red;
