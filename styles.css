@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative; /* Make the content a positioning context */
-    padding-bottom: 70px; /* Add space for the stamp */
+    padding-bottom: 100px; /* Add space for the stamp */
 }
 
 .pepe-img {
@@ -48,7 +48,7 @@ body {
 
 .info p {
     font-size: 1.2em;
-    margin: 0 0 10px 0;
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -111,15 +111,7 @@ body {
 
 .stamp {
     position: absolute;
-    bottom: -20; /* Move the stamp to the bottom edge of the content */
-    right: -20; /* Move the stamp to the right edge of the content */
+    bottom: 0; /* Move the stamp to the bottom edge of the content */
+    right: 0; /* Move the stamp to the right edge of the content */
     padding: 20px 30px; /* Make the stamp larger */
-    border: 3px solid red;
-    color: red;
-    font-size: 2.5em; /* Increase font size */
-    font-weight: bold;
-    text-transform: uppercase;
-    transform: rotate(-20deg);
-    opacity: 0.8;
-    background-color: white;
-}
+    border: 3
