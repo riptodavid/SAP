@@ -1,8 +1,6 @@
-document.getElementById('decrypt-button').addEventListener('click', function() {
+document.getElementById('blur-container').addEventListener('click', function() {
     var contractAddress = document.getElementById('contract-address');
-    if (contractAddress.style.display === 'none') {
-        contractAddress.style.display = 'block';
-    } else {
-        contractAddress.style.display = 'none';
-    }
+    var overlay = document.getElementById('overlay');
+    contractAddress.style.filter = 'none';
+    overlay.style.display = 'none';
 });
