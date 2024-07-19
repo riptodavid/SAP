@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    padding-top: 20px; /* Add some padding at the top */
+    padding-top: 0; /* Remove padding at the top */
 }
 
 .container {
@@ -58,29 +58,32 @@ body {
     margin: 0 0 10px 0;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 2px solid #333;
-    background-color: #f9f9f9;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#reveal-button {
-    padding: 10px 20px;
-    font-size: 1em;
+#decrypt-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
     border: 2px solid red;
     background-color: white;
     color: red;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-#reveal-button:hover {
+#decrypt-button:hover {
     background-color: red;
     color: white;
+}
+
+#contract-address {
+    padding: 10px;
+    font-size: 1.2em;
+    color: red;
+    border: 2px solid red;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .footer {
@@ -100,8 +103,8 @@ input[type="text"] {
 
 .stamp {
     position: absolute;
-    top: -20px; /* Move the stamp up */
-    left: -20px; /* Move the stamp to the left */
+    top: 0; /* Move the stamp to the top edge of the header */
+    left: 0; /* Move the stamp to the left edge of the header */
     padding: 10px 20px;
     border: 3px solid red;
     color: red;
