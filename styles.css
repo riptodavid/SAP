@@ -14,16 +14,19 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Use a percentage width for responsiveness */
+    max-width: 1200px; /* Limit the maximum width */
     padding: 20px;
     border: 2px solid #333;
     background-color: #d2b48c; /* Lighter brown for inner background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .content {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     justify-content: space-between;
     align-items: center;
     position: relative; /* Make the content a positioning context */
@@ -31,7 +34,8 @@ body {
 }
 
 .pepe-img {
-    max-width: 200px;
+    max-width: 100%;
+    width: 200px; /* Fixed width for smaller screens */
     margin-right: 20px;
 }
 
@@ -51,6 +55,7 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Allow text to wrap on smaller screens */
 }
 
 .blur-container {
@@ -122,4 +127,38 @@ body {
     transform: rotate(-20deg);
     opacity: 0.8;
     background-color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px; /* Adjust space for the stamp */
+    }
+
+    .pepe-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info h2 {
+        text-align: center;
+    }
+
+    .info p {
+        justify-content: center;
+    }
+
+    .stamp {
+        bottom: 0;
+        right: 0;
+        padding: 10px 20px;
+        font-size: 2em;
+    }
 }
