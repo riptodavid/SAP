@@ -22,7 +22,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
     box-sizing: border-box; /* Ensure padding is included in the width */
-    overflow: hidden; /* Prevent content overflow */
 }
 
 .content {
@@ -31,7 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative; /* Make the content a positioning context */
-    padding-bottom: 50px; /* Add space for the stamp */
+    padding-bottom: 70px; /* Add space for the stamp */
 }
 
 .pepe-img {
@@ -117,8 +116,8 @@ body {
 
 .stamp {
     position: absolute;
-    bottom: -10px; /* Adjust to keep within the container */
-    right: -10px; /* Adjust to keep within the container */
+    bottom: 10px; /* Adjust to keep within the container */
+    right: 10px; /* Adjust to keep within the container */
     padding: 20px 30px; /* Make the stamp larger */
     border: 3px solid red;
     color: red;
@@ -128,6 +127,7 @@ body {
     transform: rotate(-20deg);
     opacity: 0.8;
     background-color: white;
+    box-sizing: border-box; /* Ensure padding is included in the size */
 }
 
 /* Media Queries for Responsiveness */
@@ -140,7 +140,7 @@ body {
     .content {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 70px; /* Adjust space for the stamp */
+        padding-bottom: 90px; /* Adjust space for the stamp */
     }
 
     .pepe-img {
@@ -170,8 +170,8 @@ body {
     }
 
     .stamp {
-        bottom: 0;
-        right: 0;
+        bottom: 10px; /* Adjust to keep within the container */
+        right: 10px; /* Adjust to keep within the container */
         padding: 10px 20px;
         font-size: 2em;
     }
