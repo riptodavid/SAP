@@ -10,19 +10,21 @@
     <div class="container">
         <div class="header">
             <h1>Top Secret</h1>
+            <div class="stamp">TOP SECRET</div>
         </div>
         <div class="content">
             <img src="secret-agent-pepe1.png" alt="Secret Agent Pepe" class="pepe-img">
             <div class="info">
                 <h2>$SAP</h2>
                 <p>Contract Address:</p>
-                <input type="text" value="0xYourContractAddress" readonly>
+                <button id="reveal-button">Reveal</button>
+                <input type="text" id="contract-address" value="0xYourContractAddress" readonly style="display: none;">
             </div>
         </div>
         <div class="footer">
             <a href="https://t.me/yourtelegramlink" target="_blank">Join our Telegram</a>
         </div>
     </div>
-    <div class="stamp">TOP SECRET</div>
+    <script src="scripts.js"></script>
 </body>
 </html>
