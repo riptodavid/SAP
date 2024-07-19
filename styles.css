@@ -111,7 +111,15 @@ body {
 
 .stamp {
     position: absolute;
-    bottom: 0; /* Move the stamp to the bottom edge of the content */
-    right: 0; /* Move the stamp to the right edge of the content */
-    padding: 20px 30px; /* Make the stamp larger */
-    border: 3
+    top: -20px; /* Move the stamp up */
+    left: -20px; /* Move the stamp to the left */
+    padding: 10px 20px;
+    border: 3px solid red;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: rotate(-20deg);
+    opacity: 0.8;
+    background-color: white;
+}
