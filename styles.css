@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #f4f4f4;
+    background-color: #a67c52; /* Brown background to match a top secret file */
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     border: 2px solid #333;
-    background-color: #fff;
+    background-color: #d2b48c; /* Lighter brown for inner background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
     top: 50px;
