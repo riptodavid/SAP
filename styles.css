@@ -27,7 +27,6 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative; /* Make the content a positioning context */
-    padding-bottom: 70px; /* Add space for the stamp */
 }
 
 .pepe-img {
@@ -111,8 +110,8 @@ body {
 
 .stamp {
     position: absolute;
-    bottom: 0; /* Move the stamp to the bottom edge of the content */
-    right: 0; /* Move the stamp to the right edge of the content */
+    bottom: -20px; /* Move the stamp to the bottom edge of the container */
+    right: -20px; /* Move the stamp to the right edge of the container */
     padding: 20px 30px; /* Make the stamp larger */
     border: 3px solid red;
     color: red;
