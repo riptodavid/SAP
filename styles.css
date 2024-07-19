@@ -37,12 +37,14 @@ body {
     max-width: 100%;
     width: 200px; /* Fixed width for smaller screens */
     margin-right: 20px;
+    flex: 1 1 auto;
 }
 
 .info {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    width: calc(100% - 220px); /* Adjust width to account for image margin */
 }
 
 .info h2 {
@@ -143,8 +145,14 @@ body {
     }
 
     .pepe-img {
+        width: 100%;
+        max-width: 200px;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .info {
+        width: 100%; /* Full width for mobile */
     }
 
     .info h2 {
