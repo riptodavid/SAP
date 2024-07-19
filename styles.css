@@ -57,24 +57,28 @@ body {
 .info p {
     font-size: 1.2em;
     margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .blur-container {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    margin-left: 10px; /* Adjust margin as needed */
 }
 
 .blur-text {
     padding: 10px;
     font-size: 1.2em;
-    color: red;
+    color: gray;
     border: 2px solid red;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.1);
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     filter: blur(5px);
+    width: fit-content;
 }
 
 .overlay {
@@ -90,6 +94,12 @@ body {
     align-items: center;
     font-size: 1.2em;
     text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blur-container:hover .overlay {
+    opacity: 1;
 }
 
 .footer {
@@ -110,7 +120,7 @@ body {
 .stamp {
     position: absolute;
     bottom: -20px; /* Move the stamp to the bottom edge of the header */
-    right: 0; /* Move the stamp to the right edge of the header */
+    right: 10; /* Move the stamp to the right edge of the header */
     padding: 10px 20px;
     border: 3px solid red;
     color: red;
