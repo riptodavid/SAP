@@ -33,6 +33,12 @@ body {
     padding-bottom: 70px; /* Add space for the stamp */
 }
 
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pepe-img {
     max-width: 100%;
     width: 200px; /* Fixed width for smaller screens */
@@ -131,7 +137,6 @@ body {
 }
 
 .identification-card {
-    display: block;
     margin-top: 10px;
     font-size: 1.2em;
     color: #007BFF;
