@@ -130,6 +130,18 @@ body {
     box-sizing: border-box; /* Ensure padding is included in the size */
 }
 
+.identification-card {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.identification-card:hover {
+    text-decoration: underline;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
