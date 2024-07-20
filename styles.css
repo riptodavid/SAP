@@ -22,6 +22,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
     box-sizing: border-box; /* Ensure padding is included in the width */
+    transform-origin: top left;
 }
 
 .content {
@@ -150,8 +151,8 @@ body {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
-        width: 100%;
-        padding: 10px;
+        transform: scale(0.8); /* Scale down the entire container */
+        margin-bottom: 20px; /* Adjust bottom margin */
     }
 
     .content {
