@@ -187,4 +187,9 @@ body {
         padding: 10px 20px;
         font-size: 2em;
     }
+
+    .identification-card {
+        margin-top: 10px;
+        font-size: 1em;
+    }
 }
