@@ -157,7 +157,7 @@ body {
     .content {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 90px; /* Adjust space for the stamp */
+        padding-bottom: 70px; /* Adjust space for the stamp */
     }
 
     .pepe-img {
@@ -187,7 +187,7 @@ body {
     }
 
     .stamp {
-        bottom: 10px; /* Adjust to keep within the container */
+        bottom: 70px; /* Adjust to keep within the container */
         right: 10px; /* Adjust to keep within the container */
         padding: 10px 20px;
         font-size: 2em;
